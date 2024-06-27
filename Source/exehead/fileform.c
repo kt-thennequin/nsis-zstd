@@ -55,6 +55,16 @@
 #endif//NSIS_COMPRESS_USE_BZIP2
 #endif//NSIS_CONFIG_COMPRESSION_SUPPORT
 
+#ifdef NSIS_COMPRESS_USE_ZSTD
+#include "zstdstream.h"
+#define z_stream zstd_stream
+#define inflateInit(x) zstd_stream_reset(x)
+#define inflateReset(x) zstd_stream_reset(x)
+#define inflate(x) zstd_stream_decode(x)
+#define Z_OK 0
+#define Z_STREAM_END 1
+#endif
+
 struct block_header g_blocks[BLOCKS_NUM];
 header *g_header;
 int g_flags;

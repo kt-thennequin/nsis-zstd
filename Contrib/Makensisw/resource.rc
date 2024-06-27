@@ -100,6 +100,8 @@ BEGIN
             MENUITEM "BZIP2 (solid)",               IDM_BZIP2_SOLID
             MENUITEM "&LZMA",                       IDM_LZMA
             MENUITEM "LZMA (solid)",                IDM_LZMA_SOLID
+            MENUITEM "Z&STD",                       IDM_ZSTD
+            MENUITEM "ZSTD (solid)",                IDM_ZSTD_SOLID
             MENUITEM "&Best Compressor",            IDM_BEST
         END
         MENUITEM "", -1, MFT_SEPARATOR
@@ -396,6 +398,8 @@ BEGIN
     IDS_BEST                "Best Compressor"
     IDS_LZMA                "LZMA"
     IDS_LZMA_SOLID          "LZMA (solid)"
+    IDS_ZSTD                "ZStd"
+    IDS_ZSTD_SOLID          "ZStd (solid)"
 END
 
 #endif    // English (U.S.) resources

@@ -23,6 +23,8 @@
 #define IDS_BEST                        24
 #define IDS_LZMA                        25
 #define IDS_LZMA_SOLID                  26
+#define IDS_ZSTD                        27
+#define IDS_ZSTD_SOLID                  28
 #define DLG_MAIN                        101
 #define IDI_ICON                        102
 #define DLG_ABOUT                       103
@@ -120,19 +122,21 @@
 #define IDM_BZIP2_SOLID                 529
 #define IDM_LZMA                        530
 #define IDM_LZMA_SOLID                  531
-#define IDM_BEST                        532
-#define IDM_RECOMPILE_TEST              533
-#define IDM_CANCEL                      534
-#define IDM_SETTINGS                    535
-#define IDM_WNDSPY                      536
-#define IDM_COPY                        537
-#define IDM_UI_SWITCHOWNEDWINDOW        538 // Alt+F6
-#define IDM_UI_SWITCHSECTION            539 // F6
-#define IDM_GUIDGEN                     540
-#define IDM_LOOKUP                      541
-#define IDM_ZOOM_INC                    542
-#define IDM_ZOOM_DEC                    543
-#define IDM_ZOOM_RST                    544
+#define IDM_ZSTD                        532
+#define IDM_ZSTD_SOLID                  533
+#define IDM_BEST                        534
+#define IDM_RECOMPILE_TEST              535
+#define IDM_CANCEL                      536
+#define IDM_SETTINGS                    537
+#define IDM_WNDSPY                      538
+#define IDM_COPY                        539
+#define IDM_UI_SWITCHOWNEDWINDOW        540 // Alt+F6
+#define IDM_UI_SWITCHSECTION            541 // F6
+#define IDM_GUIDGEN                     542
+#define IDM_LOOKUP                      543
+#define IDM_ZOOM_INC                    544
+#define IDM_ZOOM_DEC                    545
+#define IDM_ZOOM_RST                    546
 
 
 // Next default values for new objects

@@ -133,6 +133,8 @@ typedef enum {
   COMPRESSOR_BZIP2_SOLID,
   COMPRESSOR_LZMA,
   COMPRESSOR_LZMA_SOLID,
+  COMPRESSOR_ZSTD,
+  COMPRESSOR_ZSTD_SOLID,
   COMPRESSOR_BEST,
 } NCOMPRESSOR;
 
@@ -144,6 +146,8 @@ const TCHAR *compressor_names[] = {_T(""),
                             _T("/SOLID bzip2"),
                             _T("lzma"),
                             _T("/SOLID lzma"),
+                            _T("zstd"),
+                            _T("/SOLID zstd"),
                             _T("Best")};
 const TCHAR *compressor_display_names[] = {_T("Defined in Script/Compiler Default"),
                             _T("ZLIB"),
@@ -152,12 +156,16 @@ const TCHAR *compressor_display_names[] = {_T("Defined in Script/Compiler Defaul
                             _T("BZIP2 (solid)"),
                             _T("LZMA"),
                             _T("LZMA (solid)"),
+                            _T("ZStd"),
+                            _T("ZStd (solid)"),
                             _T("Best Compressor")};
 const WORD compressor_commands[] = {IDM_COMPRESSOR_SCRIPT,
                               IDM_ZLIB,
                               IDM_ZLIB_SOLID,
                               IDM_BZIP2,
                               IDM_BZIP2_SOLID,
+                              IDM_LZMA,
+                              IDM_LZMA_SOLID,
                               IDM_LZMA,
                               IDM_LZMA_SOLID,
                               IDM_BEST};
@@ -171,6 +179,8 @@ int compressor_bitmaps[] = {IDB_COMPRESSOR_SCRIPT,
                             IDB_COMPRESSOR_BZIP2,
                             IDB_COMPRESSOR_LZMA,
                             IDB_COMPRESSOR_LZMA,
+                            IDB_COMPRESSOR_LZMA,
+                            IDB_COMPRESSOR_LZMA,
                             IDB_COMPRESSOR_BEST};
 int compressor_strings[] = {IDS_SCRIPT,
                             IDS_ZLIB,
@@ -179,6 +189,8 @@ int compressor_strings[] = {IDS_SCRIPT,
                             IDS_BZIP2_SOLID,
                             IDS_LZMA,
                             IDS_LZMA_SOLID,
+                            IDS_ZSTD,
+                            IDS_ZSTD_SOLID,
                             IDS_BEST};
 #endif
 
